@@ -1,0 +1,27 @@
+{
+  "name": "adminmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "semantic-ui-react": "^0.82.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darthsid57/adminModule.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darthsid57/adminModule/issues"
+  },
+  "homepage": "https://github.com/darthsid57/adminModule#readme",
+  "proxy": "http://localhost:4000"
+}
