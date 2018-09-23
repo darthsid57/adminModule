@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "react-modal": "^3.5.1",
+    "react-validation": "^3.0.7",
     "semantic-ui-react": "^0.82.5"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "file-loader": "^2.0.0",
+    "nodemon": "^1.18.4",
+    "url-loader": "^1.1.1"
   },
   "scripts": {
     "test": "mocha",

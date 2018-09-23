@@ -32,7 +32,7 @@ class UserNew extends Component {
     .catch(err => console.error(err))
   }
 
-  renderUser = ({ID, user_id}) => <div key={ID}>{user_id}</div>
+  renderUser = ({userID, user_id}) => <div key={userID}>{user_id}</div>
 
   render(){
     const { users, user } = this.state;
