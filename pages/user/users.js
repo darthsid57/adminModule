@@ -3,10 +3,9 @@ import Modal from 'react-modal';
 import { Button, Card, Image } from 'semantic-ui-react'
 
 const API = 'http://localhost:4000/users';
-const DEFAULT_QUERY = 'redux';
 
 
-class Users extends Component {
+export default class Users extends Component {
 
     constructor(props){
         super(props);
@@ -16,10 +15,12 @@ class Users extends Component {
         };
     }
 
+
+
     componentDidMount(){
-        fetch(API + DEFAULT_QUERY)
+        fetch(API)
         .then(response => response.json())
-        .then(data => this.setState({ users: data.users }));
+        .then(data => this.setState({users: data.users}));
     }
 
     render(){
@@ -28,10 +29,10 @@ class Users extends Component {
         return(
             <div>
                 <ul>
-                    {users.map(user =>
-                        <li key={user.user_id}>
-                            <a href={user.url}>{user.title}</a>
-                        </li>)}
+                    users.map(user =>
+                        <li key={users.user_id}>
+                            {users.firstname}
+                        </li>)
                 </ul>
             </div>
         )
@@ -78,5 +79,3 @@ class Users extends Component {
     // renderUserFirstName = users({userFirstName, user_firstname}) => <div key={userFirstName}>{user_firstname}</div>
     // renderUserLastName = (users{userLastName, user_lastname}) => <div key={userLastName}>{user_lastname}</div>
 }
-
-export default Users;

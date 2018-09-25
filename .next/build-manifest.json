@@ -14,6 +14,10 @@
     "/user/users": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/mainPage": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

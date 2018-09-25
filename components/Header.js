@@ -4,7 +4,7 @@ import { Menu, Segment, Image } from 'semantic-ui-react';
 export default () => {
   return (
     <div>
-      <Menu style={{ marginTop: '10px' }}>
+      <Menu style={{ marginTop: '10px' }} inverted>
         <Menu.Item>
           <img src='/logo.png' size='small' />
         </Menu.Item>
